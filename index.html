@@ -1,179 +1,98 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>RebelBlockz — Coming Soon</title>
+<title>RebelBlockz</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
   body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    background: #0D0D0D;
     color: #fff;
-    background: linear-gradient(135deg, #FF0033, #B400FF, #00C8FF, #F9E400);
-    background-size: 400% 400%;
-    animation: gradientShift 12s ease infinite;
-    overflow-x: hidden;
-  }
-
-  @keyframes gradientShift {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
-  }
-
-  .container {
     text-align: center;
-    padding: 80px 20px;
+    padding: 40px 20px;
   }
 
-  /* LOGO */
   .logo {
-    width: 260px;
-    margin: 0 auto 20px auto;
-    display: block;
+    width: 90%;
+    max-width: 750px;
+    margin: 0 auto 30px auto;
   }
 
   h1 {
-    font-size: 3.5rem;
-    letter-spacing: 4px;
+    font-size: 3rem;
+    margin-top: 10px;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    margin-bottom: 20px;
-    animation: glitch 1.5s infinite;
   }
 
-  @keyframes glitch {
-    0% {text-shadow: 2px 2px #00C8FF;}
-    25% {text-shadow: -2px -2px #FF0033;}
-    50% {text-shadow: 3px -3px #F9E400;}
-    75% {text-shadow: -3px 3px #B400FF;}
-    100% {text-shadow: 2px 2px #00C8FF;}
+  h2 {
+    font-size: 1.3rem;
+    opacity: 0.85;
+    margin-top: 5px;
+    letter-spacing: 2px;
   }
 
   p {
-    font-size: 1.4rem;
     max-width: 700px;
-    margin: 0 auto 30px auto;
-    line-height: 1.6;
-  }
-
-  .cta {
-    display: inline-block;
-    padding: 15px 40px;
-    background: #0D0D0D;
-    color: #fff;
-    border-radius: 50px;
+    margin: 20px auto;
     font-size: 1.2rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-top: 20px;
-    animation: pulse 2s infinite;
-    cursor: pointer;
-  }
-
-  @keyframes pulse {
-    0% {transform: scale(1);}
-    50% {transform: scale(1.08);}
-    100% {transform: scale(1);}
-  }
-
-  /* FLOATING BRICKS */
-  .floating-brick {
-    position: absolute;
-    width: 80px;
-    height: 40px;
-    background: #fff;
-    opacity: 0.15;
-    border-radius: 6px;
-    animation: float 10s infinite linear;
-  }
-
-  @keyframes float {
-    from {transform: translateY(0);}
-    to {transform: translateY(-1200px);}
-  }
-
-  /* 3D SPINNING BRICK */
-  .spin-container {
-    margin: 40px auto;
-    width: 120px;
-    height: 120px;
-    perspective: 800px;
-  }
-
-  .spin-brick {
-    width: 120px;
-    height: 60px;
-    background: #F9E400;
-    border-radius: 8px;
-    position: relative;
-    transform-style: preserve-3d;
-    animation: spin 4s linear infinite;
-  }
-
-  @keyframes spin {
-    from {transform: rotateY(0deg) rotateX(0deg);}
-    to {transform: rotateY(360deg) rotateX(360deg);}
+    line-height: 1.6;
   }
 
   footer {
-    margin-top: 60px;
+    margin-top: 50px;
     font-size: 0.9rem;
-    opacity: 0.9;
-    text-align: center;
-    line-height: 1.6;
-  }
-
-  footer a {
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
+    opacity: 0.8;
   }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<!-- Brick Outline Logo -->
+<svg class="logo" viewBox="0 0 900 250">
+  <rect x="100" y="40" width="700" height="170" 
+        rx="20" ry="20"
+        fill="none" 
+        stroke="#ffffff" 
+        stroke-width="8" />
 
-  <!-- LOGO (SVG) -->
-  <svg class="logo" viewBox="0 0 800 150">
-    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
-          font-size="70" fill="#fff" font-family="Montserrat" font-weight="900"
-          letter-spacing="5">
-      REBELBLOCKZ
-    </text>
-  </svg>
+  <!-- Studs -->
+  <circle cx="200" cy="80" r="18" fill="none" stroke="#ffffff" stroke-width="6"/>
+  <circle cx="300" cy="80" r="18" fill="none" stroke="#ffffff" stroke-width="6"/>
+  <circle cx="400" cy="80" r="18" fill="none" stroke="#ffffff" stroke-width="6"/>
+  <circle cx="500" cy="80" r="18" fill="none" stroke="#ffffff" stroke-width="6"/>
+  <circle cx="600" cy="80" r="18" fill="none" stroke="#ffffff" stroke-width="6"/>
+  <circle cx="700" cy="80" r="18" fill="none" stroke="#ffffff" stroke-width="6"/>
 
-  <h1>Coming Soon</h1>
+  <!-- Larger Logo Text -->
+  <text x="50%" y="165" 
+        dominant-baseline="middle" 
+        text-anchor="middle"
+        font-family="Montserrat" 
+        font-weight="900" 
+        font-size="110"
+        fill="#ffffff"
+        letter-spacing="4">
+    REBELBLOCKZ
+  </text>
+</svg>
 
-  <p>Changing the world one brick at a time.</p>
+<h2>Coming Soon</h2>
 
-  <!-- 3D SPINNING BRICK -->
-  <div class="spin-container">
-    <div class="spin-brick"></div>
-  </div>
+<p>
+  RebelBlockz is being rebuilt from the ground up — one brick at a time,  
+  with no instructions and no limits.  
+  A new experience is on the way.
+</p>
 
-  <div class="cta">Stay Tuned</div>
-
-  <footer>
-    © 2026 RebelBlockz —  Coming soon (whether the world is ready or not)<br>
-    Contact: <a href="mailto:info@rebelblockz.com">info@rebelblockz.com</a>
-  </footer>
-</div>
-
-<script>
-  // Generate floating bricks
-  for (let i = 0; i < 25; i++) {
-    let brick = document.createElement('div');
-    brick.className = 'floating-brick';
-    brick.style.left = Math.random() * 100 + 'vw';
-    brick.style.top = (Math.random() * 100 + 100) + 'vh';
-    brick.style.animationDuration = (6 + Math.random() * 10) + 's';
-    document.body.appendChild(brick);
-  }
-</script>
+<footer>
+  © 2026 RebelBlockz — Coming soon (whether the world is ready or not)
+</footer>
 
 </body>
 </html>
-
